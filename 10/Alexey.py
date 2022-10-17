@@ -1,1 +1,1 @@
-ddd
+print(3)
