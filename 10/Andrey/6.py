@@ -3,3 +3,4 @@ b = a / 18
 c = a / 5
 d = a + b + c
 print ('Итог: - ', d)
+#-float
