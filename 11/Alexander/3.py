@@ -1,5 +1,4 @@
-a = int(input("Длина:"))
-b = int(input("Ширина:"))
-c = 0
+a = float(input("Длина:"))
+b = float(input("Ширина:"))
 c = a*b
 print(c)
