@@ -1,6 +1,6 @@
 a = input("Введите оценку(В буквенном формате): - ")
 if a == 'A+':
-    print('4')
+    print('4.0')
 elif a == 'A':
     print('4')
 elif a == 'A-':
@@ -14,12 +14,12 @@ elif a == 'B-':
 elif a == 'C+':
     print('2.3')
 elif a == 'C':
-    print('2')
+    print('2.0')
 elif a == 'C-':
     print('1.7')
 elif a == 'D+':
     print('1.3')
 elif a == 'D':
-    print('1')
+    print('1.0')
 elif a == 'F':
     print('0')
