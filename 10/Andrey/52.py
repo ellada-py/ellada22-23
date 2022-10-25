@@ -1,26 +1,25 @@
-a = int(input("Введите оценку(В буквенном формате): - "))
-b = int(input("Оценка в цифровом формате: - "))
-if == 'A+':
+a = input("Введите оценку(В буквенном формате): - ")
+if a == 'A+':
     print('4')
-elif == 'A':
+elif a == 'A':
     print('4')
-elif == 'A-':
+elif a == 'A-':
     print('3.7')
-elif == 'B+':
+elif a == 'B+':
     print('3.3')
-elif == 'B':
+elif a == 'B':
     print('3.0')
-elif == 'B-':
+elif a == 'B-':
     print('2.7')
-elif == 'C+':
+elif a == 'C+':
     print('2.3')
-elif == 'C':
+elif a == 'C':
     print('2')
-elif == 'C-':
+elif a == 'C-':
     print('1.7')
-elif == 'D+':
+elif a == 'D+':
     print('1.3')
-elif == 'D':
+elif a == 'D':
     print('1')
-elif == 'F':
+elif a == 'F':
     print('0')
