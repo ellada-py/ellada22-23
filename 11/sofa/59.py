@@ -13,21 +13,7 @@ if (month=='января') or (month=='марта') or (month=='мая') or (mon
         n=m.index(month)
         month=m[n+1]
 elif month=='февраля':
-    if year % 400 == 0:
-        if day<29:
-            day+=1
-        else:
-            day=1
-            n=m.index(month)
-            month=m[n+1]
-    elif year % 100 == 0:
-        if day < 28:
-            day += 1
-        else:
-            day = 1
-            n = m.index(month)
-            month = m[n + 1]
-    elif year % 4 == 0:
+    if (year % 400 == 0) or ((year % 4 == 0) and (year % 100 != 0)):
         if day < 29:
             day += 1
         else:
