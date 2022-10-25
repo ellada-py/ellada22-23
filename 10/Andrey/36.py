@@ -1,6 +1,6 @@
 a = int(input('Введите возраст: - '))
 if a <= 0:
-    print('Куда я жмял')
+    print('Куда я жмал')
 elif a == 1:
     print(10.5)
 elif a == 2:
