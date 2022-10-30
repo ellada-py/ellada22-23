@@ -1,7 +1,7 @@
-a = []
-b = int(input())
-while b!=0:
-    a.append(b)
-    b = int(input())
-a.sort()
-print(*a)
+list1 = []
+a = int(input())
+while a!=0:
+    list1.append(a)
+    a = int(input())
+list1.sort()
+print(list1)
