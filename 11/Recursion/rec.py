@@ -1,13 +1,17 @@
-# Вычисляем сумму всех целых чисел от нуля до заданного n с помощью рекурсии
-# @param n – максимальное значение для включения в сумму
-# @return сумма всех целых чисел от нуля до n включительно
-def sum_to(n):
-if n <= 0 :
-return 0 # Базовый случай
-else:
-return n + sum_to(n – 1) # Рекурсивный случай
-# Вычисляем сумму всех целых чисел от нуля до заданного n
-num = int(input("Введите положительное целое число: "))
-total = sum_to(num)
-print("Сумма целых чисел от нуля до", \
-num, "равна", total)
+count = 0
+i = 11000001
+while count < 5:
+    halfI = i // 2
+    dell = 0
+    countDel = 0
+    for j in range(halfI, 1, -1):
+        if i % j == 0:
+            countDel += 1
+            dell += j
+            if dell > 10000:
+                break
+            elif countDel == 2:
+                print(dell)
+                count += 1
+                break
+    i += 1
