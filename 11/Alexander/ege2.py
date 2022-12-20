@@ -1,12 +1,6 @@
-a1 = 0
-a2 = 0
-a3 = 0
-a4 = 0
-a5 = 0
-a6 = 0
-a7 = 0
-a8 = 0
-a9 = 0
-a10 = 0
-for i in range (35000000, 40000000):
-    if i % 2 != 0:
+a = list(map(int, input().split()))
+for i in range(1, len(a)):
+    if a[i] >= 0 and a[i+1: -1] >= 0 and a[i - 1] >= 0:
+        print(a[i], a[i+1], end=' ')
+    if a[i] < 0 and a[i+1:-1] < 0 and a[i - 1] < 0:
+        print(a[i], end=' ')
