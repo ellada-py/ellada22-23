@@ -1,8 +1,8 @@
-for i in range(45212176,50000001):
+for i in range(35000000,40000001):
     if i % 2 == 1:
-        count = 2
+        count = 1
     else:
-        count=1
+        count=0
     sqrtI = round(i ** 0.5)
     for j in range(2, sqrtI + 1):
         if i % j == 0:

@@ -1,6 +1,8 @@
 
 f = open('27883.txt')
 data = f.readlines()
-s = data[0].split()
-s = int(s[0])
 del (data[0])
+a=643
+b=2358
+data=[int(i) for i in data]
+print(data)
