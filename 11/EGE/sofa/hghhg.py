@@ -13,7 +13,7 @@ for i in range (10000,100000):
             s = int(x[2:])
             if x[k] == 4:
                 if (x[k - 1] % 2 == 1) or (x[k + 1] % 2 == 1):
-                    n=0
+                    break
                 else:
                     n=1
     count= count +n
