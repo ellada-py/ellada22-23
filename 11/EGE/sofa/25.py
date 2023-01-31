@@ -1,17 +1,11 @@
-count = 0
-number = 500000001
-while count < 5:
-    i = number // 2
-    dell = 1
-    count1 = 0
-    for j in range(2, i + 1):
-        if number % j == 0:
-            count1 += 1
-            dell *= j
-            if dell > number:
-                break
-            elif count1 == 5:
-                print(dell)
-                count += 1
-                break
-    number += 1
+d=149
+for j in range (4):
+    x=int('11'+'0'*j+'223')
+    if x%d==0:
+        print(x,end='   ')
+        print(x//d)
+for i in range (1,1000):
+    x=int('11'+str(i)+'223')
+    if x%d==0:
+        print(x, end='   ')
+        print(x // d)
