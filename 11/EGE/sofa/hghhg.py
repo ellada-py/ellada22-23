@@ -1,4 +1,4 @@
-count=0
+count=0 #ответ: 612
 n=0
 for i in range (10000,100000):
     count2 = 0
@@ -9,13 +9,14 @@ for i in range (10000,100000):
             if count2>2:
                 break
     if count2==2:
-        for k in range(1, len(x) - 1):
-            s = int(x[2:])
-            if x[k] == 4:
-                if (x[k - 1] % 2 == 1) or (x[k + 1] % 2 == 1):
+        s =x[2:]
+        for k in range(1, len(s) - 1):
+            if int(s[k]) == 4:
+                if (int(s[k - 1]) % 2 == 1) or (int(s[k + 1]) % 2 == 1):
+                    n=0
                     break
                 else:
                     n=1
-    count= count +n
+        count= count +n
 print(oct(10004))
 print(count)
