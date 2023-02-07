@@ -1,18 +1,16 @@
-f=open('17.txt')
+f=open('17var02.txt')
 s=[int(j) for j in f]
-sum=0
-k=0
-for l in range (len(s)):
-    if s[l]%2==1:
-        sum+=s[l]
-        k+=1
-a=sum/k
-count=0
 max=0
+count=0
+max2=0
+for l in range (len(s)):
+    if s[l]%2==0:
+        if s[l]>max:
+            max=s[l]
 for i in range(len(s)-1):
-    if ((s[i]%5==0) or (s[i+1]%5==0)) and ((s[i]<a) or (s[i+1]<a)):
+    if s[i]+s[i+1]==max:
         count+=1
-        if s[i]+s[i+1]>max:
-            max=s[i]+s[i+1]
+        if (s[i]**2)+(s[i+1]**2)>max2:
+            max2=(s[i]**2)+(s[i+1]**2)
 print(count)
-print(max)
+print(max2)

@@ -5,13 +5,14 @@ def f(x):
     if x[0]=="4":
         if int(x[1])%2==0:
             count+=1
-    if x[-1]=='4':
+    elif x[-1]=='4':
         if int(x[-2])%2==0:
             count+=1
-    for i in range (1,len(x)-1):
-        if x[i]=='4':
-            if (int(x[i-1])%2==0) and (int(x[i+1])%2==0):
-                count+=1
+    else:
+        for i in range (1,len(x)-1):
+            if x[i]=='4':
+                if (int(x[i-1])%2==0) and (int(x[i+1])%2==0):
+                    count+=1
     if count==2:
         return 1
     else:
