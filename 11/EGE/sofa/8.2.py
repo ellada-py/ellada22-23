@@ -1,15 +1,16 @@
 number=0
-for k in range(6):
-    for n in range(6):
-        for o in range(6):
-            for r in range(6):
-                for c in range(6):
-                    for i in range(6):
-                        s=str(k)+str(n)+str(o)+str(r)+str(c)+str(i)
+for a in range(6):
+    for z in range(6):
+        for l in range(6):
+            for o in range(6):
+                for p in range(6):
+                    for b in range(6):
+                        s=str(a)+str(z)+str(l)+str(o)+str(p)+str(b)
                         number+=1
-                        countk=s.count('0')
-                        counti=s.count('5')
-                        if (countk<=3) and (counti==2):
+                        countb=s.count('5')
+                        counta=s.count('0')
+                        countz=s.count('1')
+                        if (countb<2) and (counta==1) and (countz<3):
                             print(s)
                             print(number)
                             break
