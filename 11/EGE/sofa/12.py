@@ -1,7 +1,8 @@
-s='9'*127
-while ('333' in s) or ('999' in s):
-    if '333' in s:
-        s=s.replace('333','9',1)
+s='22'+'1'*2023
+while ('2111' in s) or ('1112' in s):
+    s=s.replace('111','1',1)
+    if '21' in s:
+        s=s.replace('21','12',1)
     else:
-        s=s.replace('999','3',1)
+        s=s.replace('12','1',1)
 print(s)
