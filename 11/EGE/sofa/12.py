@@ -1,8 +1,7 @@
-s='22'+'1'*2023
-while ('2111' in s) or ('1112' in s):
-    s=s.replace('111','1',1)
-    if '21' in s:
-        s=s.replace('21','12',1)
+s='8'*70
+while ('2222' in s) or ('8888' in s):
+    if '2222' in s:
+        s=s.replace('2222','88',1)
     else:
-        s=s.replace('12','1',1)
+        s=s.replace('8888','22',1)
 print(s)
