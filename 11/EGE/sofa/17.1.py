@@ -1,7 +1,7 @@
 f=open('17 (4).txt')
 s=[int(k) for k in f]
-count=0
 max=0
+count=0
 for i in range (len(s)-1):
     for j in range(i-1,len(s)):
         if s[i]*s[j]%10==0:
