@@ -1,5 +1,12 @@
-f=open('24var04.txt')
+f=open('zadanie24_1.txt')
 s=f.read()
-while 'AB' in s:
-
+max=0
+count=0
+for i in range (len(s)):
+    if s[i]=='C':
+        count+=1
+        if count>max:
+            max=count
+    else:
+        count=0
 print(max)
