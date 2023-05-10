@@ -28,5 +28,4 @@ for i in range (10000,100000):
     if count2==2:
         s =x[2:]
         count+=f(s)
-
 print(count)
