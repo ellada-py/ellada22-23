@@ -1,4 +1,4 @@
-f=open('27_A.txt')
+f=open('28129_A.txt')
 s=[int(i) for i in f]
 d=160
 p=7

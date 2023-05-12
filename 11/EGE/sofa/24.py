@@ -1,12 +1,12 @@
-f=open('24.txt')
+f=open('zadanie24_1.txt')
 s=f.read()
-k=1
 max=0
-for i in range(1, len(s)):
-    if s[i] == 'P' and s[i-1] == 'P':
-        k = 1
+count=0
+for i in range (len(s)):
+    if s[i]=='C':
+        count+=1
+        if count>max:
+            max=count
     else:
-        k += 1
-        if k > max:
-            max = k
+        count=0
 print(max)

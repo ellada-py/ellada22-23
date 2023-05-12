@@ -2,8 +2,11 @@ import turtle as t  # Подключим модуль черепашка
 k = 30
 t.left(90)
 t.speed(10)
-for i in range(10):  # пропишем алгоритм построения фигуры по условию
-    t.forward(5 * k)
+for i in range(14):  # пропишем алгоритм построения фигуры по условию
+    t.right(60)
+    t.forward(2 * k)
+    t.right(60)
+    t.forward(2 * k)
     t.right(60)
 t.up()
 t.speed(10)  # Увеличим скорость черепашки
