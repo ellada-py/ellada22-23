@@ -1,4 +1,4 @@
-f=open('26 (1).txt')
+f=open('26.txt')
 s=[int(i) for i in f]
 count=0
 max=0
